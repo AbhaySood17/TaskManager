@@ -1,0 +1,75 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+body {
+  background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url('https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=1964&auto=format&fit=crop');
+  font-family: 'Times New Roman', Times, serif;
+  @apply min-h-screen bg-fixed bg-cover bg-center text-gray-900 text-xl leading-8 font-bold tracking-wide;
+}
+
+/* Keep calligraphy only for the title */
+.app-title {
+  font-family: 'Great Vibes', cursive;
+  @apply flex items-center justify-center gap-4;
+}
+
+.flower-icon {
+  @apply text-pink-500 drop-shadow;
+}
+
+/* Ensure inputs and interactive elements inherit Times New Roman */
+input, textarea, select, button {
+  font-family: inherit;
+}
+
+.app {
+  @apply max-w-2xl mx-auto p-8 mt-10 mb-14 bg-white/85 backdrop-blur-sm rounded-2xl shadow-2xl;
+}
+
+h1 {
+  @apply text-4xl mb-8 text-center text-gray-800;
+}
+
+form {
+  @apply flex flex-col gap-5 mb-8 p-6 bg-white/80 rounded-xl shadow;
+}
+
+input, textarea, select {
+  @apply p-3 border rounded w-full bg-white/90 focus:outline-none focus:ring-2 focus:ring-blue-500 text-lg;
+}
+
+textarea {
+  @apply h-28 resize-none;
+}
+
+button {
+  @apply px-5 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-lg font-bold;
+}
+
+ul {
+  @apply list-none p-0;
+}
+
+li {
+  @apply p-5 mb-4 bg-white/95 rounded-xl shadow flex flex-col gap-3 border border-gray-100;
+}
+
+li h3 {
+  @apply text-2xl text-gray-800;
+}
+
+li p {
+  @apply text-lg text-gray-700;
+}
+
+li button {
+  @apply px-4 py-2 text-lg;
+}
+
+li button:nth-child(2) {
+  @apply bg-green-600 hover:bg-green-700 text-white;
+}
+
+li button:nth-child(3) {
+  @apply bg-red-600 hover:bg-red-700 text-white;
+}
